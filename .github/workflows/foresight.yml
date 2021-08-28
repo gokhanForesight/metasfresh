@@ -40,5 +40,6 @@ jobs:
         with:
           apikey: ${{ secrets.THUNDRA_APIKEY }}
           project_id: ${{ secrets.PROJECT_ID }}
-          command: mvn -fn clean install
           parent_pom_path: ./backend
+      - name: Run mvn command
+        run: mvn --fn clean install
