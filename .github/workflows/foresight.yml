@@ -40,4 +40,4 @@ jobs:
           apikey: ${{ secrets.THUNDRA_APIKEY }}
           project_id: ${{ secrets.PROJECT_ID }}
           command: mvn -fn clean install
-          working-directory: ${{env.working-directory}}
+          parent_pom_path: ${{env.working-directory}}
