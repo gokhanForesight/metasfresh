@@ -37,4 +37,4 @@ jobs:
         with:
           apikey: ${{ secrets.THUNDRA_APIKEY }}
           project_id: ${{ secrets.PROJECT_ID }}
-          command: mvn -fn --file ./backend/pom.xml clean install
+          command: mvn -fn clean install
