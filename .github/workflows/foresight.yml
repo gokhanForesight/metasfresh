@@ -38,4 +38,4 @@ jobs:
           apikey: ${{ secrets.THUNDRA_APIKEY }}
           project_id: ${{ secrets.PROJECT_ID }}
           parent_pom_path: ./misc/parent-pom/pom.xml
-          command: mvn --fn clean install --file ./misc/parent-pom/pom.xml
+          command: mvn --fn clean install --file ./backend/pom.xml
