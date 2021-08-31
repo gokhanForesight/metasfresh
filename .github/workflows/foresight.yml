@@ -31,7 +31,7 @@ jobs:
           distribution: 'adopt'
           java-version: '8'
       - name: Build assemblies
-        run: mvn -fn clean install --file ./misc/assemblies/pom.xml
+        run: mvn -fn clean install --file misc/assemblies/pom.xml
       - name: Thundra Maven Test Instrumentation
         uses: thundra-io/thundra-maven-test-action@v1
         env:
@@ -40,4 +40,4 @@ jobs:
           apikey: ${{ secrets.THUNDRA_APIKEY }}
           project_id: ${{ secrets.PROJECT_ID }}
           parent_pom_path: ./misc/parent-pom/pom.xml
-          command: mvn --fn clean install --file ./misc/parent-pom/pom.xml
+          command: mvn --fn clean install --file misc/parent-pom/pom.xml
